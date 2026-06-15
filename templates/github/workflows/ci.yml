@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Customize this workflow
+        run: |
+          echo "Replace this placeholder with your app's install, lint, test, typecheck, and build commands."
+          echo "Delivery Kit installed successfully."

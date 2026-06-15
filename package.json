@@ -1,0 +1,19 @@
+{
+  "name": "delivery-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reusable Claude Code delivery framework for product, design, engineering, QA, security, and release workflows.",
+  "type": "module",
+  "scripts": {
+    "status": "bash scripts/agent-team-status.sh .",
+    "install:app": "bash scripts/install-into-app-repo.sh",
+    "sync:app": "bash scripts/sync-into-app-repo.sh",
+    "browser-check": "node scripts/browser-check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.0.0"
+  }
+}
